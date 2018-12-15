@@ -1,0 +1,7146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        
+          <title>Data Analysis</title>
+        
+        <!-- Bootstrap css stylesheet - min -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+            <style>
+            img {
+              width: 75%;
+              height: auto }
+            </style>
+        </head>
+        
+        <body>
+        
+        <div class="container">
+        
+        <!-- Navbar (resizes) based on device -->
+        
+        <nav class="navbar navbar-expand-sm bg-light">
+        
+        
+        
+                <!-- Links -->
+        
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark col-md-12 row">
+        
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="../landing_page.html">Wine Analysis</a>
+        
+                      
+        
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+        
+                          <li class="nav-item">
+        
+                            <a class="nav-link" href="convertcsv.htm">Data</a>
+        
+                          </li>
+        
+                          <!-- Dropdown -->
+        
+                          <li class="nav-item dropdown">
+        
+                              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          
+                                Comparisons
+          
+                              </a>
+          
+                              <div class="dropdown-menu">
+          
+                                <a class="dropdown-item" href="wine/Compare/index.html">California White Wine</a>
+                                <a class="dropdown-item" href="wine/Comparison_2.html">California Sparkling Wine</a>
+                                <a class="dropdown-item" href="wine/Comparison-3.html">California Red Wine</a>
+          
+                              </div>
+                          </li>
+        
+                      
+        
+                          <!-- Dropdown -->
+        
+                          <li class="nav-item dropdown">
+        
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        
+                              Visualizations
+        
+                            </a>
+        
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../templates/index_mfm.html">Muriel</a>
+                                <a class="dropdown-item" href="../templates/index_ll.html">Lei Lei</a>
+                                <a class="dropdown-item" href="../templates/index_mcm.html">Marcus</a>
+                                <a class="dropdown-item" href="../templates/index_jk.html">Jasmine</a>
+                                <a class="dropdown-item" href="../templates/wine-directory.html">Patricia</a>
+        
+                            </div>
+        
+                          </li>
+        
+                        </ul>
+        
+                      </nav>
+        
+                    </nav>
+        
+          <div class = "row">
+        
+          </div>
+
+<div class="container">
+    <a href = "https://public.tableau.com/profile/patti.hurlocker8161#!/vizhome/CalWineProduction/Story1?publish=yes" alt="Tableau - California and US"></a>
+  
+
+  <h2>Hover over the rows to pick your favorite winery: </h2>
+  <p>The Bootstrap .table-hover class is enabled </p>            
+  <table class="table table-bordered table-hover table-condensed">
+    <div class="table-responsive"> 
+
+        <table class="table table-bordered table-hover table-condensed">
+            <thead><tr><th title="Field #1">Area</th>
+            <th title="Field #2">County</th>
+            <th title="Field #3">Winery</th>
+            <th title="Field #4">Address</th>
+            <th title="Field #5">City/State/Zip</th>
+            <th title="Field #6">Lat/Long</th>
+
+    
+        </tr></thead>
+        <tbody><tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>ACORN Winery/Alegra Vineyards </td>
+        <td>12040 Old Redwood Hwy</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5820260, -122.8417150</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Alexander Valley Vineyards </td>
+        <td>8644 Highway 128 </td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6564195, -122.7869833</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Amapola Creek Vineyards &amp; Winery </td>
+        <td>392 London Way</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.3348072, -122.4790096</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Amphora Winery </td>
+        <td>4791 Dry Creek Rd, Building 6</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6732395, -122.9338227</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Acquiesce Winery &amp; Vineyards</td>
+        <td>22353 N Tretheway Road </td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1885127, -121.1802689</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Adelaida Cellars</td>
+        <td>5805 Adelaida Road</td>
+        <td>Paso Robles, CA 93465</td>
+        <td>35.6452490, -120.8024952</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Alma Sol Winery</td>
+        <td>1321 E. Thousand Oaks Blvd., Suite 108</td>
+        <td>Thousand Oaks, CA </td>
+        <td>34.1788536, -118.8566764</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Alpen Cellars</td>
+        <td>200 East Fork Road</td>
+        <td>Trinity Center, CA 96091</td>
+        <td>41.0200263, -122.6066685</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Alex?s Red Barn Winery</td>
+        <td>39820 Calle Contento</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5341277, -117.0732609</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Alpha Omega Winery</td>
+        <td>1155 Mee Lane at Hwy 29</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4706119, -122.4291175</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Altamura Vineyards &amp; Winery</td>
+        <td>PO Box 3209</td>
+        <td>Napa, CA 94558</td>
+        <td>38.2229340, -122.2643480</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Amicus Cellars</td>
+        <td>576 Gateway Drive</td>
+        <td>Napa, CA 94558</td>
+        <td>38.2229340, -122.2643480</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Amizetta Winery</td>
+        <td>1099 Greenfield Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5212580, -122.3806290</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Ampelos Cellars</td>
+        <td>312 North 9th St.</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6425882, -120.4377885</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Ancient Peaks</td>
+        <td>22720 El Camino Real</td>
+        <td>Santa Margarita, CA 93453</td>
+        <td>35.3890630, -120.6130020</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Andis Wines</td>
+        <td>11000 Shenandoah Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5214988, -120.8182701</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Antelope Valley Winery</td>
+        <td>42041 20th St. West</td>
+        <td>Lancaster, CA 93534</td>
+        <td>34.6470555, -118.1662546</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Arbios Cellars/Praxis Cellars </td>
+        <td>21023 Geyserville Avenue</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.7063014, -122.9042514</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Arcadian Winery</td>
+        <td>1515-B East Chestnut Ave</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6421843, -120.4395073</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Argot Wines </td>
+        <td>5445 Sonoma Mountain Rd</td>
+        <td>Santa Rosa, CA 95404</td>
+        <td>38.3668750, -122.6075390</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Arietta</td>
+        <td>3468 Silverado Trail N</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5445063, -122.4892502</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Arkenstone Vineyards</td>
+        <td>335 West Lane</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5636180, -122.4655800</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Armida Winery </td>
+        <td>2201 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5898970, -122.8823380</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Aubert Wines</td>
+        <td>333 Silverado Trail</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5820276, -122.5662176</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Austin Hope Winery</td>
+        <td>1585 Live Oak Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5884522, -120.7213528</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Aver Family Vineyards</td>
+        <td>2900 Soma Way</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0527140, -121.6512300</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Avio Vineyards</td>
+        <td>14520 Ridge Road</td>
+        <td>Sutter Creek, CA 95685</td>
+        <td>38.3967697, -120.7556299</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>B Cellars</td>
+        <td>703 Oakville Cross Rd</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4501335, -122.3750212</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Baileyana, Tangent &amp; True Myth</td>
+        <td>5828 Orcutt Rd</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2273345, -120.5997015</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Baily Vineyard &amp; Winery</td>
+        <td>33440 La Serena Way</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5232624, -117.0823043</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Baldacci Family Vineyards</td>
+        <td>6236 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4208622, -122.3390375</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Balletto Vineyards </td>
+        <td>5700 Occidental Road</td>
+        <td>Santa Rosa, CA 95401</td>
+        <td>38.4198844, -122.8141582</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Bargetto?s Santa Cruz Winery</td>
+        <td>3535 North Main Street</td>
+        <td>Soquel, CA 95073</td>
+        <td>36.9953610, -121.9544656</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Barnett Vineyards</td>
+        <td>4070 Spring Mountain Road</td>
+        <td>St. Helena , CA 94574</td>
+        <td>38.5258675, -122.5591046</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Barra of Mendocino</td>
+        <td>7051 North State Street</td>
+        <td>Redwood Valley, CA 95470</td>
+        <td>39.2462982, -123.2074029</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast </td>
+        <td>San Francisco Bay</td>
+        <td>Barterra Winery</td>
+        <td>643 Main Street</td>
+        <td>Half Moon Bay, CA 94019</td>
+        <td>37.4617355, -122.4292503</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Battaglini Estate Winery </td>
+        <td>2948 Piner Road</td>
+        <td>Santa Rosa, CA 95401</td>
+        <td>38.4667074, -122.7877951</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Beach House Winery</td>
+        <td>1534 Sleeping Indian Road</td>
+        <td>Fallbrook, CA 92028</td>
+        <td>33.2946300, -117.2627315</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Placer County</td>
+        <td>Bear River Winery</td>
+        <td>2751 Combie Road</td>
+        <td>Meadow Vista, CA 95722</td>
+        <td>39.0227300, -121.0308896</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Bella Vineyards &amp; Wine Caves </td>
+        <td>9711 West Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.7059305, -122.9807797</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Bella Vista Vineyard &amp; Winery</td>
+        <td>41220 Calle Contento</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5255305, -117.0640067</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Benessere Vineyards</td>
+        <td>1010 Big Tree Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5523770, -122.5060420</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Bent Creek Winery</td>
+        <td>5455 Greenville Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6501177, -121.7018345</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Benziger Family Winery </td>
+        <td>1883 London Ranch Rd</td>
+        <td>Glen Ellen, CA 95442</td>
+        <td>38.3605875, -122.5418777</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Berghold Vineyards &amp; Winery</td>
+        <td>17343 N. Cherry Road</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.1379466, -121.2107773</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Bernardo Winery</td>
+        <td>13330 Paseo Del Verano Norte</td>
+        <td>San Diego, CA 92128</td>
+        <td>33.0234718, -117.0762382</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Berryessa Gap Vineyards</td>
+        <td>15 Main Street</td>
+        <td>Winters, CA 95694</td>
+        <td>38.5218757, -121.9694175</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Bertagna Son Kissed Vineyard</td>
+        <td>9275 Midway</td>
+        <td>Durham, CA 95938</td>
+        <td>39.6409520, -121.7992278</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Big Basin Vineyards</td>
+        <td>14598 Big Basin Way</td>
+        <td>Saratoga , CA 95070</td>
+        <td>37.2557305, -122.0358861</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Big White House Winery</td>
+        <td>6800 Greenville Rd.</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6470810, -121.6956526</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Black Ridge Vineyards</td>
+        <td>18550 Black Road</td>
+        <td>Los Gatos, CA 95033</td>
+        <td>37.1916556, -122.0027339</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Black Sheep Winery</td>
+        <td>221 Main Street</td>
+        <td>Murphys, CA 95247</td>
+        <td>38.1370996, -120.4604485</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Black Stallion Winery</td>
+        <td>4089 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3598318, -122.2906388</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Blackbird Vineyards</td>
+        <td>1330 Oak Knoll Ave</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3618660, -122.3139184</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Blankiet Estate</td>
+        <td>2358 California Drive</td>
+        <td>Yountville, CA 94599</td>
+        <td>38.4007242, -122.3837445</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Bodegas Paso Robles</td>
+        <td>729 13th Street</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6279074, -120.6907798</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Bonny Doon Vineyard</td>
+        <td>450 Highway 1</td>
+        <td>Davenport, CA 95017</td>
+        <td>37.0112105, -122.1944680</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Brander Vineyard, The</td>
+        <td>2401 Refugio Rd</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.6563740, -120.0989950</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Bravante Vineyards</td>
+        <td>300 Stone Ridge Road</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5683917, -122.4624130</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Bray Vineyards</td>
+        <td>10590 Shenandoah Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5024551, -120.8270537</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Brewer ? Clifton</td>
+        <td>329 North F Street</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6431302, -120.4557908</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Brian Benson Cellars</td>
+        <td>2915 Limestone Way</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5765027, -120.6886061</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Briar Rose Winery</td>
+        <td>41720 Calle Cabrillo</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5165745, -117.0813619</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Brice Station Vineyards</td>
+        <td>3353 E Hwy 4</td>
+        <td>Murphys, CA 95247</td>
+        <td>38.1712702, -120.4125811</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Briceland Vineyards</td>
+        <td>5959 Briceland-Shelter Rd.</td>
+        <td>Redway, CA 95560</td>
+        <td>40.1123200, -123.8956651</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Bridlewood Estate Winery</td>
+        <td>3555 Roblar Ave.</td>
+        <td>Santa Ynez, CA 93460</td>
+        <td>34.6519274, -120.0823694</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Brochelle Vineyards</td>
+        <td>2323 Tuley Ct. #130</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6440539, -120.6560290</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Broken Earth Winery</td>
+        <td>5625 Highway 46 East</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6589277, -120.5959206</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Broman Cellars</td>
+        <td>945 Deer Park Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5497346, -122.4691476</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Buena Vista Carneros Winery </td>
+        <td>18000 Old Winery Rd</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2995043, -122.4219437</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Burgess Cellars</td>
+        <td>1108 Deer Park Road</td>
+        <td>St. Helena, CA, CA 94574</td>
+        <td>38.5570499, -122.4743350</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Burrell School Vineyards</td>
+        <td>24060 Summit Road</td>
+        <td>Los Gatos, CA 95033</td>
+        <td>37.1207110, -121.9326950</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Butterfly Creek Winery</td>
+        <td>4063 Triangle Road</td>
+        <td>Mariposa, CA 95338</td>
+        <td>37.5075719, -119.8638572</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Buttonwood Farm Winery</td>
+        <td>1500 Alamo Pintado Road</td>
+        <td>Solvang, CA 93463</td>
+        <td>34.6221910, -120.1179160</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>C.G. Di Arie Vineyard &amp; Winery ? Tasting Room</td>
+        <td>19919 Shenandoah School Rd</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.4971723, -120.8148906</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Ca? Del Grevino</td>
+        <td>2510 E. Clark Avenue</td>
+        <td>Santa Maria, CA 93455</td>
+        <td>34.8649533, -120.3707524</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Cakebread Cellars</td>
+        <td>8300 St Helena Hwy</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4477904, -122.4108888</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Calcareous Vineyard</td>
+        <td>3430 Peachy Canyon Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6294440, -120.7504370</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>CaliPaso Winery</td>
+        <td>4230 Buena Vista Drive</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6629280, -120.6681070</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Calluna Vineyards </td>
+        <td>11450 Brooks Road</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.5796878, -122.7808901</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Cambria Winery &amp; Vineyard</td>
+        <td>5475 Chardonnay Lane</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8772058, -120.2601206</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Cantiga Wineworks</td>
+        <td>5980 Meyers Lane</td>
+        <td>Somerset, CA 95684</td>
+        <td>38.6464401, -120.6782315</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast </td>
+        <td>San Francisco Bay</td>
+        <td>Captain Vineyards</td>
+        <td>1969 Joseph Dr.</td>
+        <td>Moraga, CA 94556</td>
+        <td>37.8470684, -122.1006263</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Caraccioli Cellars Tasting Room</td>
+        <td>Dolores between Ocean and 7th</td>
+        <td>Carmel, CA 93921</td>
+        <td>36.5536048, -121.9224996</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Cardinale Winery</td>
+        <td>7600 St. Helena Highway</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4290519, -122.3903056</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Carhartt Vineyard &amp; Winery</td>
+        <td>2990A Grand Avenue</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.6672426, -120.1145641</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Carmel Road ? Jackson Family Wines</td>
+        <td>Lincoln between Ocean &amp; 6th</td>
+        <td>Carmel-by-the-Sea, CA 93921</td>
+        <td>36.5547389, -121.9234477</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Carneros Wine Company</td>
+        <td>708 First Street</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3010406, -122.2822470</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Carr Vineyards &amp; Winery</td>
+        <td>414 N. Salsipuedes Street</td>
+        <td>Santa Barbara, CA 93103</td>
+        <td>34.4225755, -119.6875599</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Casa Nuestra Winery &amp; Vineyards</td>
+        <td>3451 Silverado Trail North</td>
+        <td>Saint Helena, CA 94574</td>
+        <td>38.5432012, -122.4919769</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Cass Winery</td>
+        <td>7350 Linne Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5977138, -120.5648305</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Cast Wines </td>
+        <td>8500 Dry Creek Road</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.7124596, -122.9735630</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Castello Di Amorosa</td>
+        <td>4045 N. St. Helena Highway</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5585812, -122.5427528</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Cayucos Cellars</td>
+        <td>131 N. Ocean Ave.</td>
+        <td>Cayucos, CA 93430</td>
+        <td>35.4488506, -120.9049498</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Cedar Mountain Winery</td>
+        <td>7000 Tesla Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6660357, -121.7063941</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Cedar View Winery</td>
+        <td>1384 S. Frankwood Avenue</td>
+        <td>Sanger, CA 93657</td>
+        <td>36.7136917, -119.4480615</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Los Carneros</td>
+        <td>Ceja Vineyards</td>
+        <td>22989 Burndale Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2460529, -122.4228128</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Cerro Caliente Cellars</td>
+        <td>831 Via Esteban</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2584308, -120.6444819</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Chamisal Vineyards</td>
+        <td>7525 Orcutt Road</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2003746, -120.5717541</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Chapin Family Vineyards</td>
+        <td>36084 Summitville St.</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5639513, -117.0302614</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Charbay Distillery &amp; Winery</td>
+        <td>4001 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5219434, -122.5417790</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Charles B. Mitchell Vineyards</td>
+        <td>8221 Stoney Creek Rd.</td>
+        <td>Fair Play, CA 95684</td>
+        <td>38.5876580, -120.6523080</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Charles R Vineyards</td>
+        <td>8195 Crane Ridge Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6453216, -121.6943243</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Chateau Boswell</td>
+        <td>3468 Silverado Trail</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5445063, -122.4892502</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Chateau Julien Wine Estate</td>
+        <td>8940 Carmel Valley Rd</td>
+        <td>Carmel, CA 93923</td>
+        <td>36.5284577, -121.8197026</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Chateau Margene</td>
+        <td>4385 La Panza Road</td>
+        <td>Creston, CA 93432</td>
+        <td>35.5166295, -120.4939378</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Chateau Montelena Winery</td>
+        <td>1429 Tubbs Lane</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.6075680, -122.6039620</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Chimney Rock Winery</td>
+        <td>5350 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3905173, -122.3136218</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Christopher Creek Winery </td>
+        <td>641 Limerick Lane</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5898121, -122.8372070</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Chuparosa Vineyards</td>
+        <td>910 Gem Lane</td>
+        <td>Ramona, CA CA</td>
+        <td>33.0092880, -116.8584780</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Cima Collina</td>
+        <td>19 E. Carmel Valley Road</td>
+        <td>Carmel Valley, CA 93924</td>
+        <td>36.4777986, -121.7290528</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Cinnabar Winery</td>
+        <td>14612 Big Basin Way</td>
+        <td>Saratoga,CA 95070</td>
+        <td>37.2556757, -122.0362207</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Cinquain Cellars</td>
+        <td>6404 Independence Ranch Place</td>
+        <td>San Miguel, CA 93451</td>
+        <td>35.7184910, -120.5804620</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Clarksburg Wine Company</td>
+        <td>35265 Willow Avenue</td>
+        <td>Clarksburg, CA 95612</td>
+        <td>38.4233152, -121.5330473</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Clif Family Winery</td>
+        <td>709 Main Street</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5003575, -122.4639954</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Cline Cellars </td>
+        <td>24737 Arnold Drive</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2147733, -122.4585958</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Clos de La Tech</td>
+        <td>535 Eastview Way</td>
+        <td>Woodside, CA 94062</td>
+        <td>37.4584496, -122.2782598</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Clos du Bois </td>
+        <td>19410 Geyserville Avenue</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6848160, -122.8778928</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Clos Du Val</td>
+        <td>5330 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3871827, -122.3126118</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Clos LaChance Winery</td>
+        <td>1 Hummingbird Lane</td>
+        <td>San Martin, CA 95046</td>
+        <td>37.0729559, -121.6432387</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Yuba County</td>
+        <td>Clos Saron</td>
+        <td>9269 Collins Hse Dr</td>
+        <td>Browns Valley, CA 95918</td>
+        <td>39.2421139, -121.4091297</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Clos Sol?ne</td>
+        <td>2040 Niderer Rd</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5866346, -120.7682415</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Concannon Vineyard</td>
+        <td>4590 Tesla Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6661990, -121.7397388</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Conn Creek Winery</td>
+        <td>8711 Silverado Trail</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4863071, -122.4045762</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Consilience Wines</td>
+        <td>2923 Grand Avenue</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.6659565, -120.1152408</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>CONSTANT Diamond Mountain Vineyard</td>
+        <td>2121 Diamond Mountain Road</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5430127, -122.5793386</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Convergence Vineyards</td>
+        <td>14650 Hwy 124</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.4256891, -120.8750153</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Conway Family Wines</td>
+        <td>217-G Stearns Wharf</td>
+        <td>Santa Barbara, CA 93101</td>
+        <td>34.4100065, -119.6855487</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Cooper-Garrod Estate Vineyards</td>
+        <td>22645 Garrod Road</td>
+        <td>Saratoga, CA 95070</td>
+        <td>37.2745820, -122.0598860</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Copain Wines </td>
+        <td>7800 Eastside Road</td>
+        <td>Healdsburg, CA 95446</td>
+        <td>38.5190400, -122.8502786</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Corison Winery</td>
+        <td>987 St Helena Hwy</td>
+        <td>St Helena , CA 94574</td>
+        <td>38.4849659, -122.4473873</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Cottonwood Canyon Vineyard</td>
+        <td>3940 Dominion Road</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8831879, -120.3452570</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Cougar Vineyard &amp; Winery</td>
+        <td>39870 De Portola Road</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5426151, -117.0092937</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Crane Family Vineyards</td>
+        <td>1051 Borrette Lane</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3161790, -122.3491222</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Crooked Vine Winery</td>
+        <td>4948 Tesla Rd.</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6660881, -121.7336613</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>CR? Wine Company</td>
+        <td>20146 Road 21</td>
+        <td>Madera , CA 93637</td>
+        <td>37.0411205, -120.1663748</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Cypher Winery</td>
+        <td>740 Pine Street</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6222997, -120.6877926</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>D?Art Wines</td>
+        <td>13299 N. Curry Ave.</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.0993104, -121.2364795</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Dancing Coyote Wines</td>
+        <td>3125 E. Orange St.</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1763295, -121.2790032</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Danza del Sol Winery</td>
+        <td>39050 De Portola Road</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5318817, -117.0157939</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Daou Vineyards</td>
+        <td>2777 Hidden Mountain Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6416169, -120.7842891</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Darcie Kent Vineyards</td>
+        <td>7000 Tesla Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6660357, -121.7063941</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast </td>
+        <td>San Francisco Bay</td>
+        <td>Dashe Cellars</td>
+        <td>55 4th Street</td>
+        <td>Oakland, CA 94607</td>
+        <td>37.7937816, -122.2663635</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>David Coffaro Vineyard &amp; Winery </td>
+        <td>7485 Dry Creek Road</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.7055319, -122.9602175</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Davis Family Vineyards </td>
+        <td>52 Front Street</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6061650, -122.8613362</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Deaver Vineyards</td>
+        <td>12455 Steiner Rd</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5432840, -120.7916030</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Delicato Vineyards</td>
+        <td>12001 South Highway 99</td>
+        <td>Manteca, CA 95336</td>
+        <td>37.8549750, -121.2193169</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>DeLoach Vineyards </td>
+        <td>1791 Olivet Rd.</td>
+        <td>Santa Rosa, CA 95401</td>
+        <td>38.4622149, -122.8212534</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Diamond Creek Vineyards</td>
+        <td>1500 Diamond Mountain Road</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5621050, -122.5800420</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Doce Robles Winery</td>
+        <td>2023 Twelve Oaks Drive</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5874497, -120.7095141</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Dolce Winery</td>
+        <td>1350 Acacia Drive</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4264220, -122.4038974</td>
+        <td>www.dolcewine.com </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Domaine Artefact Vineyard and Winery</td>
+        <td>15404 Highland Valley Road</td>
+        <td>Escondido, CA 92025</td>
+        <td>33.0667401, -117.0017749</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Domaine Becquet Winery Tasting Room</td>
+        <td>415 Main Street </td>
+        <td>Murphys, CA 95247</td>
+        <td>38.1374345, -120.4640710</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Los Carneros</td>
+        <td>Domaine Carneros</td>
+        <td>1240 Duhig Rd.</td>
+        <td>Napa, CA 94559</td>
+        <td>38.2546975, -122.3569732</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Domaine Chandon</td>
+        <td>1 California Drive</td>
+        <td>Yountville, CA 94599</td>
+        <td>38.3979722, -122.3642474</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Donatoni Winery</td>
+        <td>3225 Township Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5709531, -120.7562617</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Placer County</td>
+        <td>Dono dal Cielo</td>
+        <td>5960 Wise Road</td>
+        <td>Newcastle, CA 95658</td>
+        <td>38.9234900, -121.1909660</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Los Carneros</td>
+        <td>Donum Estate, The</td>
+        <td>24520 Ramal Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2307436, -122.4054398</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Dragonette Cellars</td>
+        <td>2445 Alamo Pintado Ave</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.6657260, -120.1141354</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Drew Family Cellars</td>
+        <td>31351 Greenwood Road</td>
+        <td>Elk, CA 95432</td>
+        <td>39.1329555, -123.6493522</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Dreyer Wine </td>
+        <td>Sonoma-Enoteca</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2916184, -122.4561175</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Drytown Cellars</td>
+        <td>16030 Highway 49</td>
+        <td>Drytown, CA 95699</td>
+        <td>38.4458915, -120.8598859</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Duckhorn Vineyards</td>
+        <td>1000 Lodi Lane</td>
+        <td>Saint Helena, CA 94574</td>
+        <td>38.5290320, -122.4907140</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Dunn Vineyards</td>
+        <td>805 White Cottage Rd N</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5892200, -122.4483800</td>
+        <td>http://www.dunnvineyards.com/</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Dunnewood Vineyards</td>
+        <td>2399 N State St.</td>
+        <td>Ukiah, CA 95482</td>
+        <td>39.1805233, -123.2084578</td>
+        <td>www.mendowine.com</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Dutcher Crossing Winery </td>
+        <td>8533 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.7096180, -122.9743730</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Dutton-Goldfield Winery </td>
+        <td>3100 Gravenstein Highway North</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4374874, -122.8584862</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Eberle Winery</td>
+        <td>3810 Highway 46 East</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6500493, -120.6280597</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Eberle Winery</td>
+        <td>3810 E. Highway 46</td>
+        <td>Paso Robles, CA 93447</td>
+        <td>35.6500493, -120.6280597</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>�cluse Wines</td>
+        <td>1520 Kiler Canyon Rd</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6103787, -120.7186443</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Benito County</td>
+        <td>Eden Rift Vineyards</td>
+        <td>10034 Cienega Rd</td>
+        <td>Hollister, CA 95023</td>
+        <td>36.7475704, -121.3912337</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Edna Valley Vineyard</td>
+        <td>2585 Biddle Ranch Road</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2168996, -120.6077553</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Ehlers Estate</td>
+        <td>3222 Ehlers Lane</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5318828, -122.4981484</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ehret Family Winery </td>
+        <td>Locals @ 21023 Geyserville Avenue</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.7062883, -122.9041859</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Elizabeth Spencer</td>
+        <td>1165 Rutherford Road</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4590377, -122.4219393</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Emerald Creek Winery</td>
+        <td>38642 Highway 79</td>
+        <td>Warner Springs, CA 92086</td>
+        <td>33.4091843, -116.8200631</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Emilio Guglielmo Winery</td>
+        <td>1480 E. Main Ave.</td>
+        <td>Morgan Hill, CA 95037</td>
+        <td>37.1457240, -121.6343234</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Engelmann Cellars</td>
+        <td>3275 North Rolinda</td>
+        <td>Fresno, CA 93723</td>
+        <td>36.7827780, -119.9615960</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>entwine</td>
+        <td>5565 Tesla Road</td>
+        <td>Livermore Valley, CA 94550</td>
+        <td>37.6642501, -121.7253465</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Estancia Estates Winery</td>
+        <td>980 Bryant Canyon Road</td>
+        <td>Soledad, CA 93960</td>
+        <td>36.4281354, -121.3101670</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Estate 1856 Wines </td>
+        <td>20 Matheson Street</td>
+        <td>Healdsburg, CA</td>
+        <td>38.6099887, -122.8712589</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Europa Village</td>
+        <td>33475 La Serena Way</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5235311, -117.0845416</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Fallbrook Winery</td>
+        <td>2554 Via Rancheros</td>
+        <td>Fallbrook, CA 92028</td>
+        <td>33.3428070, -117.2045370</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Fantesca Estate &amp; Winery</td>
+        <td>2920 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5095124, -122.4946551</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Far Niente Winery</td>
+        <td>1350 Acacia Drive</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4264220, -122.4038974</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>F?si Estate Winery</td>
+        <td>42415 Road 208</td>
+        <td>Friant, CA 93626</td>
+        <td>37.0410800, -119.7775980</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Placer County</td>
+        <td>Fawnridge Winery</td>
+        <td>5560 Fawnridge Road</td>
+        <td>Auburn, CA 95602</td>
+        <td>38.9894976, -121.1240939</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Fazeli Cellars</td>
+        <td>37320 De Portola</td>
+        <td>Temecula, CA 92590</td>
+        <td>33.5095847, -117.0186188</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Fenestra Winery</td>
+        <td>83 Vallecitos Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6418317, -121.7960238</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Fenton Herriott Vineyards</td>
+        <td>120 Jacquier Ct.</td>
+        <td>Placerville, CA 95667</td>
+        <td>38.7407290, -120.7599710</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Fernwood Cellars</td>
+        <td>7137 Redwood Retreat Road</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0439005, -121.7174540</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ferrari-Carano Vineyards </td>
+        <td>8761 Dry Creek Road</td>
+        <td>Healdsburg, CA 96448</td>
+        <td>38.7114035, -122.9782368</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>Ficklin Vineyards</td>
+        <td>30246 Avenue 7 1/2</td>
+        <td>Madera, CA 93637</td>
+        <td>36.8578260, -119.9971110</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Fiddlehead Cellars</td>
+        <td>1597 E Chestnut Ave</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6421500, -120.4386680</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Fieldbrook Winery</td>
+        <td>4241 Fieldbrook Road</td>
+        <td>Fieldbrook, CA 95521</td>
+        <td>40.9587150, -124.0318440</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Flowers Vineyard &amp; Winery </td>
+        <td>28500 Seaview Road</td>
+        <td>Cazadero, CA 95421</td>
+        <td>38.5494391, -123.2369384</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Flying Goat Cellars</td>
+        <td>1520 East Chestnut Court, Unit A</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6426862, -120.4389087</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Folie A Deux Winery</td>
+        <td>7481 St. Helena Highway</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4211386, -122.3903114</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Foppiano Vineyards </td>
+        <td>12707 Old Redwood Highway</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5896629, -122.8506506</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Forchini Vineyards &amp; Winery </td>
+        <td>5141 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6769500, -122.9359251</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Fort Ross Vineyard, Winery &amp; Tasting Room</td>
+        <td>15725 Meyers Grade Road</td>
+        <td>Jenner, CA 95450</td>
+        <td>38.5114286, -123.1943201</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Forth Vineyards </td>
+        <td>2335 West Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6307391, -122.9061726</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Fortino Winery</td>
+        <td>4525 Hecker Pass Hwy</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0142134, -121.6533436</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Four Brix Winery</td>
+        <td>2290 Eastman Ave., 109</td>
+        <td>Ventura, CA 93003</td>
+        <td>34.2524767, -119.2292180</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Foxen Vineyards</td>
+        <td>7200 Foxen Canyon Road</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8246737, -120.2324196</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Francis Ford Coppola Winery </td>
+        <td>300 Via Archimedes</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6796559, -122.8880721</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Franciscan Estate</td>
+        <td>1178 Galleron Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4744995, -122.4320374</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Frangipani Estate Winery</td>
+        <td>39750 De Portola Road</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5413023, -117.0097700</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Frasinetti Winery</td>
+        <td>7395 Frasinetti Road</td>
+        <td>Sacramento, CA 95829</td>
+        <td>38.4892480, -121.3948080</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Freeman Vineyard &amp; Winery </td>
+        <td>1300 Montgomery Road</td>
+        <td>Sebastopol , CA 95472</td>
+        <td>38.4094917, -122.8831123</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Freemark Abbey</td>
+        <td>3022 St. Helena Highway North</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5255567, -122.4963525</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Frey Vineyards</td>
+        <td>14000 Tomki Rd.</td>
+        <td>Redwood Valley, CA 95470</td>
+        <td>39.3366168, -123.2275405</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Frog?s Leap</td>
+        <td>8815 Conn Creek Road</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4741054, -122.4024368</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Gainey Vineyard</td>
+        <td>3950 East Hwy 246</td>
+        <td>Santa Ynez, CA 93460</td>
+        <td>34.6080746, -120.0651244</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Gale Vineyards &amp; Winery</td>
+        <td>9345 Stanford Lane</td>
+        <td>Durham, CA 95938</td>
+        <td>39.6432756, -121.7858989</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Cucamonga Valley</td>
+        <td>Galleano Winery</td>
+        <td>4231 Wineville Road</td>
+        <td>Mira Loma, CA 91752</td>
+        <td>34.0112888, -117.5421183</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Garden Creek Vineyards </td>
+        <td>2335 Geysers Road</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6989286, -122.8266737</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Garre Vineyard &amp; Winery</td>
+        <td>7986 Tesla Rd</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6657331, -121.6979143</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Georis Winery</td>
+        <td>4 Pilot Rd.</td>
+        <td>Carmel Valley, CA 93924</td>
+        <td>36.4805933, -121.7345295</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Giracci Vineyards</td>
+        <td>16162 Jackson Ranch Rd</td>
+        <td>Silverado, CA 92676</td>
+        <td>33.7286570, -117.6478990</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Los Carneros</td>
+        <td>Gloria Ferrer Caves &amp; Vineyards</td>
+        <td>23555 Carneros Hwy. 121</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2300768, -122.4604267</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Gold Mountain Winery</td>
+        <td>7750 Fairplay Rd</td>
+        <td>Fair Play, CA 95684</td>
+        <td>38.5940723, -120.6709401</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Goldeneye Winery</td>
+        <td>9200 Highway 128</td>
+        <td>Philo, CA 95466</td>
+        <td>39.0576364, -123.4327687</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Gordian Knot Winery </td>
+        <td>538 Grove Steet</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6149840, -122.8747500</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Grassini Family Vineyards</td>
+        <td>24 El Paseo</td>
+        <td>Santa Barbara, CA 93101</td>
+        <td>34.4201863, -119.6997801</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Grey Fox Vineyards</td>
+        <td>90 Grey Fox Lane</td>
+        <td>Oroville, CA 95966</td>
+        <td>39.4950160, -121.4746468</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Grgich Hills Estate</td>
+        <td>1829 St. Helena Hwy.</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4653981, -122.4289932</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Groth Vineyards &amp; Winery</td>
+        <td>750 Oakville Cross Road</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4483328, -122.3803005</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Hafner Vineyard</td>
+        <td>4280 Pine Flat Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6803570, -122.8080630</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Hall Wines</td>
+        <td>401 St. Helena Hwy. South</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4889554, -122.4531817</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Halter Ranch Vineyard</td>
+        <td>8910 Adelaida Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6508780, -120.8509870</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Hammersky Vineyards</td>
+        <td>7725 Vineyard Drive</td>
+        <td>Paso Robles, CA 92446</td>
+        <td>35.5978936, -120.8335019</td>
+        <td>https://www.hafnervineyard.com/</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Handley Cellars</td>
+        <td>3151 Hwy. 128</td>
+        <td>Philo, CA 95466</td>
+        <td>39.1195036, -123.5143058</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Hanzell Vineyards </td>
+        <td>18596 Lomita Avenue</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.3133424, -122.4624163</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Harmony Cellars</td>
+        <td>3255 Harmony Valley Road</td>
+        <td>Harmony, CA 93435</td>
+        <td>35.5093555, -121.0195273</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Harney Lane Winery</td>
+        <td>9010 E. Harney Lane</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.1007401, -121.2064891</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Hartwell Vineyards</td>
+        <td>5795 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4042377, -122.3291355</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Lake County</td>
+        <td>Hawk and Horse Vineyards</td>
+        <td>13048 Hwy 29 - Winery</td>
+        <td>Lower Lake, CA 95457</td>
+        <td>38.8597940, -122.6116160</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Hawk Watch Winery</td>
+        <td>27054 Chihuahua Valley Rd</td>
+        <td>Warner Springs, CA 92086</td>
+        <td>33.3721090, -116.7441000</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Hawkes Wine ? Healdsburg Tasting Room</td>
+        <td>6734 Highway 128</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6689651, -122.8169931</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Hawkes Wine ? Sonoma Tasting Room </td>
+        <td>383 First Street West</td>
+        <td>Sonoma , CA 95476</td>
+        <td>38.2942235, -122.4587767</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Hearst Ranch Winery</td>
+        <td>7300 North River Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.7070509, -120.6806498</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Hecker Pass Winery</td>
+        <td>4605 Hecker Pass Hwy.</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0132016, -121.6548866</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Heidrun Meadery</td>
+        <td>55 Ericson Court</td>
+        <td>Arcata, CA 95521</td>
+        <td>40.9026740, -124.0712976</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Heitz Wine Cellars</td>
+        <td>500 Taplin Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5015586, -122.4165947</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Heringer Estates</td>
+        <td>35265 Willow Ave</td>
+        <td>Clarksburg, CA 95612</td>
+        <td>38.4233152, -121.5330473</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Heritage Oak Winery</td>
+        <td>10112 E. Woodbridge Road</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1608425, -121.1925282</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Herman Story Wines</td>
+        <td>1227 Paso Robles Street</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6273602, -120.6858778</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Hitching Post Wines</td>
+        <td>406 E. Highway 246</td>
+        <td>Buellton, CA 93427</td>
+        <td>34.6087025, -120.1818173</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Holly?s Hill Vineyards</td>
+        <td>3680 Leisure Lane</td>
+        <td>Placerville, CA 95667</td>
+        <td>38.6750980, -120.6962690</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Honig Vineyard and Winery</td>
+        <td>850 Rutherford Road</td>
+        <td>Rutherford, CA 94574</td>
+        <td>38.4720740, -122.4071960</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Hop Kiln Winery </td>
+        <td>6050 Westside Rd</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5364154, -122.8674529</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Hope Family Wines</td>
+        <td>1585 Live Oak Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5884522, -120.7213528</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Hopper Creek Winery</td>
+        <td>6204 Washington Street</td>
+        <td>Yountville, CA 94558</td>
+        <td>38.3878717, -122.3496771</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Hunt Cellars</td>
+        <td>2875 Oakdale Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5665831, -120.7457264</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Inglenook</td>
+        <td>1991 St. Helena Hwy</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4546839, -122.4307987</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Iron Horse Vineyards </td>
+        <td>9786 Ross station Road</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4579949, -122.8976458</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Iron Hub Winery</td>
+        <td>12500 Steiner Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5384280, -120.7903960</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Ironstone Vineyards</td>
+        <td>1894 Six Mile Road</td>
+        <td>Murphys , CA 95247</td>
+        <td>38.1208670, -120.4672550</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>J Vineyards &amp; Winery </td>
+        <td>11447 Old Redwood Highway</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5728853, -122.8427810</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>J. Lohr Paso Robles Wine Center</td>
+        <td>6169 Airport Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6908352, -120.6414263</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>J. Lohr San Jose Wine Center</td>
+        <td>1000 Lenzen Avenue</td>
+        <td>San Jose, CA 95126</td>
+        <td>37.3338334, -121.9127316</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>J. Rochioli Winery &amp; Vineyards </td>
+        <td>6192 Westside Rd.</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5335045, -122.8672302</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Jack Creek Cellars</td>
+        <td>5265 Jack Creek Rd</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5536403, -120.7920567</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Jacuzzi Family Vineyards </td>
+        <td>24724 Arnold Dr.</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2146859, -122.4540220</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Jaffurs Wine Cellars</td>
+        <td>819 E. Montecito Street</td>
+        <td>Santa Barbara, CA 93103</td>
+        <td>34.4241946, -119.6835904</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Jalama Wines</td>
+        <td>308 N 9th Street, Unit C</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6422745, -120.4377885</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Jeff Cohn Cellars </td>
+        <td>535 First Street West</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2917039, -122.4591971</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Jericho Canyon Vineyard</td>
+        <td>3322 Old Lawley Toll Rd.</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.6202706, -122.5936965</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Jodar Vineyards and Winery</td>
+        <td>3405 Carson Court</td>
+        <td>Placerville, CA 95667</td>
+        <td>38.7380790, -120.7044120</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Jones Family Vineyards</td>
+        <td>PO Box 352</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5787965, -122.5797054</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Joseph Cellars Winery</td>
+        <td>4455 St Helena Hwy</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5639440, -122.5635790</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Joseph Phelps Vineyards</td>
+        <td>200 Taplin Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5020790, -122.4289930</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Joseph Swan Vineyards </td>
+        <td>2916 Laguna Rd</td>
+        <td>Forestville, CA 95436</td>
+        <td>38.4832420, -122.8507500</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Joullian Vineyards</td>
+        <td>2 Village Road</td>
+        <td>Carmel Valley, CA 93924</td>
+        <td>36.4793060, -121.7327708</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Justin Vineyards &amp; Winery</td>
+        <td>11680 Chimney Rock Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6549539, -120.9008610</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Kalyra Wines</td>
+        <td>343 N.Refugio Rd</td>
+        <td>Santa Ynez, CA 93460</td>
+        <td>34.5932083, -120.0990716</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Kapcsandy Family Winery</td>
+        <td>1001 State Lane</td>
+        <td>Yountville, CA 94599</td>
+        <td>38.4226196, -122.3486162</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Kastania Vineyards </td>
+        <td>4415 Kastania Road.</td>
+        <td>Petaluma, CA 94952</td>
+        <td>38.2124949, -122.6027130</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Kendall-Jackson </td>
+        <td>5007 Fulton Road</td>
+        <td>Fulton, CA 95439</td>
+        <td>38.5069333, -122.7728723</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Kenefick Ranch Winery</td>
+        <td>1371 Lincoln Avenue</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5785162, -122.5792803</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Kenneth Volk Vineyards</td>
+        <td>5230 Tepusquet Road</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8705610, -120.2456124</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Kenwood Vineyards </td>
+        <td>9592 Sonoma Hwy (Hwy 12)</td>
+        <td>Kenwood, CA 95452</td>
+        <td>38.4167390, -122.5433350</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Kirigin Cellars</td>
+        <td>11550 Watsonville Road</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0467288, -121.6526903</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Klinker Brick Winery</td>
+        <td>15887 N. Alpine Road</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.1241477, -121.2178250</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Knights Bridge Winery</td>
+        <td>1373 Lincoln Avenue</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5785820, -122.5793214</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Koehler Winery</td>
+        <td>5360 Foxen Canyon Rd.</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.7299110, -120.1296510</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Kokomo Wines </td>
+        <td>4791 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6732395, -122.9338227</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Kongsgaard</td>
+        <td>4375 Atlas Peak Road</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4373040, -122.2453450</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Korbel Champagne Cellars </td>
+        <td>13250 River Road</td>
+        <td>Guerneville, CA, CA 95404</td>
+        <td>38.5100788, -122.9677295</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Kunin Wines</td>
+        <td>28 Anacapa St.</td>
+        <td>Santa Barbara, CA 93101</td>
+        <td>34.4139870, -119.6888018</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Kynsi Winery</td>
+        <td>2212 Corbett Canyon Road</td>
+        <td>Arroyo Grande, CA 93420</td>
+        <td>35.1909570, -120.5834168</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>L?Aventure</td>
+        <td>2815 Live Oak Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5900394, -120.7435712</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>La Crema </td>
+        <td>3575 Slusser Rd</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.4910050, -122.8305530</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>La Rochelle Winery </td>
+        <td>233 Adobe Canyon Rd</td>
+        <td>Kenwood, CA 95451</td>
+        <td>38.4285214, -122.5554426</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Laetitia Winery</td>
+        <td>453 Laetitia Vineyard Drive</td>
+        <td>Arroyo Grande, CA 93420</td>
+        <td>35.0878420, -120.5294880</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Lambert Bridge Winery </td>
+        <td>4085 West Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6467850, -122.9276540</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Land of Promise </td>
+        <td>3845 South Ely Road</td>
+        <td>Petaluma, CA 94954</td>
+        <td>38.2341510, -122.5729380</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Landmark Vineyards </td>
+        <td>101 Adobe Canyon Rd.</td>
+        <td>Kenwood, CA 95452</td>
+        <td>38.4262609, -122.5564660</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>LangeTwins Family Winery and Vineyards</td>
+        <td>1525 East Jahant Road</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.2050526, -121.2970729</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Larkmead Vineyards</td>
+        <td>1100 Larkmead Lane</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5587193, -122.5245894</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Lasseter Family Winery </td>
+        <td>1 Vintage Lane</td>
+        <td>Glen Ellen, CA 95442</td>
+        <td>38.3832040, -122.5248360</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Lava Cap Winery</td>
+        <td>2221 Fruitridge Road</td>
+        <td>Placerville, CA 95667</td>
+        <td>38.7514382, -120.7410568</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Lazy Creek Vineyards</td>
+        <td>4741 Highway 128</td>
+        <td>Philo, CA 95466</td>
+        <td>39.1072482, -123.4988648</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Le Cuvier Winery</td>
+        <td>3333 Vine Hill Lane</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6511133, -120.7320570</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Le Mulet Rouge Vineyard and Winery</td>
+        <td>16915 Red Mule Road</td>
+        <td>Fiddletown, CA 95629</td>
+        <td>38.4935680, -120.7091700</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Locatelli Vineyards &amp; Winery</td>
+        <td>8585 Cross Canyons Road</td>
+        <td>San Miguel, CA 93451</td>
+        <td>35.7537682, -120.6772652</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Loma Prieta Winery</td>
+        <td>26985 Loma Prieta Way</td>
+        <td>Los Gatos, CA CA</td>
+        <td>37.1059880, -121.8804599</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Lone Madrone</td>
+        <td>5800 Adelaida Road</td>
+        <td>Paso Robles, CA 93447</td>
+        <td>35.6516069, -120.7983602</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Long Creek Winery</td>
+        <td>323 Ward Blvd.</td>
+        <td>Oroville, CA 95966</td>
+        <td>39.5162600, -121.4903747</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Long Meadow Ranch Winery</td>
+        <td>1775 Whitehall Lane</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4605941, -122.4638363</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Longoria Wines</td>
+        <td>2935 Grand Avenue</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.6662447, -120.1152833</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Loring Wine Company</td>
+        <td>1034 W. Aviation Drive</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6626728, -120.4704158</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Louis M. Martini</td>
+        <td>254 South St.</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4910740, -122.4521790</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Lucas &amp; Lewellen Vineyards</td>
+        <td>1645 Copenhagen Drive</td>
+        <td>Solvang, CA 93463</td>
+        <td>34.5953703, -120.1402330</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Lumiere Winery</td>
+        <td>39555 Calle Contento</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5376150, -117.0765800</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Macchia</td>
+        <td>7099 E Peltier Road</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1899508, -121.2306495</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>MacRostie Winery and Vineyards </td>
+        <td>4605 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5545780, -122.8726840</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Madrone Vineyards Estate </td>
+        <td>777 Madrone Road</td>
+        <td>Glen Ellen, CA 95442</td>
+        <td>38.3406550, -122.5062014</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Manzoni Estate Vineyard</td>
+        <td>30981 River Rd.</td>
+        <td>Soledad, CA 93960</td>
+        <td>36.4722855, -121.4676372</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Margerum Wine Company Tasting Room</td>
+        <td>813 Anacapa Street</td>
+        <td>Santa Barbara, CA 93101</td>
+        <td>34.4210178, -119.6989002</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Martin Family Vineyards </td>
+        <td>5610 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6802490, -122.9419067</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Martin Ranch Winery</td>
+        <td>6675 Redwood Retreat Road</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0402270, -121.7111430</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Martinelli Winery </td>
+        <td>3360 River Road</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.4874649, -122.8071477</td>
+        <td> </td>
+        <td>Signature Varietals: Cabernet Sauvignon, Chardonnay, Merlot, Pinot Noir, Sauvignon Blanc, Syrah, Zinfandel </td>
+        <td>Amenities: Gardens, Sustainable / Organic / Biodynamic, Tours, Unique Architecture / Caves </td>
+        <td>Details: Since the founding of the winery in 1973, Cakebread Cellars has focused on making fine Napa Valley wines. They attribute the success of their winery, Cakebread Cellars, to their 34-year dedication to quality, consistency and continuity. </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Mas�t Vineyard and Winery</td>
+        <td>301 Reeves Canyon Road</td>
+        <td>Redwood Valley, CA 95470</td>
+        <td>39.2738850, -123.2613549</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Matanzas Creek </td>
+        <td>6097 Bennett Valley Road</td>
+        <td>Santa Rosa, CA 95404</td>
+        <td>38.4018825, -122.6280116</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Maurice Carrie Winery</td>
+        <td>34225 Rancho California Road</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5276571, -117.0655251</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Mauritson Family Winery </td>
+        <td>2859 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6503240, -122.9121407</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>McGrail Vineyards and Winery</td>
+        <td>5600 Greenville Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6503390, -121.6950958</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>McHenry Vineyard</td>
+        <td>6821 Bonny Doon Road</td>
+        <td>Santa Cruz, CA 95060</td>
+        <td>37.0669577, -122.1504555</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>McKenzie-Mueller Vineyards &amp; Winery</td>
+        <td>2530 Las Amigas Road</td>
+        <td>Napa, CA 94559</td>
+        <td>38.2321512, -122.3318904</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>McManis Family Vineyards</td>
+        <td>18700 East River Road</td>
+        <td>Ripon, CA 95366</td>
+        <td>37.7571197, -121.0790526</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>McNab Ridge Winery</td>
+        <td>13441 South Highway 101</td>
+        <td>Hopland, CA 95449</td>
+        <td>38.9724438, -123.1160395</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Melville Winery</td>
+        <td>5185 East Hwy 246</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6660711, -120.3305732</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Menghini Winery</td>
+        <td>1150 Julian Orchards Dr.</td>
+        <td>Julian, CA 92036</td>
+        <td>33.1049494, -116.6071275</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Merry Edwards Wines </td>
+        <td>2959 Gravenstein Hwy N.</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4349156, -122.8550266</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Merryvale Vineyards</td>
+        <td>1000 Main Street</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5022063, -122.4641502</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Mettler Family Vineyards</td>
+        <td>7889 E. Harney Lane</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.1026000, -121.2200210</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Meyer Family Cellars</td>
+        <td>19750 Highway 128</td>
+        <td>Yorkville, CA 95494</td>
+        <td>38.9444064, -123.3220821</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Michael David Winery</td>
+        <td>4580 West Highway 12</td>
+        <td>Lodi, CA 95242</td>
+        <td>38.1149461, -121.3723954</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Middle Ridge Winery</td>
+        <td>28544 Front Street</td>
+        <td>Temecula, CA 92590</td>
+        <td>33.4948500, -117.1502346</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Mill Creek Vineyards </td>
+        <td>1401 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5977724, -122.8862717</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Millesime Cellars</td>
+        <td>425 Constitution Avenue #H</td>
+        <td>Camarillo, CA 93012</td>
+        <td>34.2092068, -119.0319637</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Milliaire Winery</td>
+        <td>276 Main St.</td>
+        <td>Murphys, CA 95247</td>
+        <td>38.1376295, -120.4614835</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Minassian-Young Vineyards</td>
+        <td>4045 Peachy Canyon Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6249314, -120.7650117</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Miner Family Vineyards</td>
+        <td>7850 Silverado Trail</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4627190, -122.3710920</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Miramonte Winery</td>
+        <td>33410 Rancho California Rd</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5257532, -117.0780616</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>MJA Vineyards</td>
+        <td>24900 Highland Way</td>
+        <td>Los Gatos, CA 95030</td>
+        <td>37.1106981, -121.9118647</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Monte De Oro Winery</td>
+        <td>35820 Rancho California Road</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5453803, -117.0461699</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Montemaggiore </td>
+        <td>2355 West Dry Creek Rd</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6251634, -122.9208171</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Montesquieu Winery</td>
+        <td>8221 Arjons Drive</td>
+        <td>San Diego, CA 92126</td>
+        <td>32.8931805, -117.1422168</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Monticello Vineyards</td>
+        <td>4242 Big Ranch Road</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3584470, -122.3103012</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Moondance Cellars </td>
+        <td>9575 Sonoma Highway</td>
+        <td>Kenwood, CA 95452</td>
+        <td>38.4143857, -122.5467463</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Moshin Vineyards </td>
+        <td>10295 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5025155, -122.8971567</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Mount Eden Vineyards</td>
+        <td>22020 Mt. Eden Road</td>
+        <td>Saratoga, CA 95070</td>
+        <td>37.2683088, -122.0604075</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Mystic Hills Vineyard</td>
+        <td>P.O. Box 5148</td>
+        <td>Paso Robles, CA 93447</td>
+        <td>35.6204471, -120.6895538</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Napa Cellars</td>
+        <td>7481 St. Helena Highway</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4211386, -122.3903114</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Napa Valley Connection Family Wines</td>
+        <td>5555 BROADWAY, STE 204</td>
+        <td>American Canyon, CA 94503</td>
+        <td>38.1995140, -122.2576050</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Navarro Vineyards</td>
+        <td>5601 Hwy 128</td>
+        <td>Philo, CA 95466</td>
+        <td>39.0958389, -123.4821619</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Neal Family Vineyards</td>
+        <td>716 Liparita Road</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5747156, -122.4630778</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Nelson Family Vineyards</td>
+        <td>550 Nelson Ranch Road</td>
+        <td>Ukiah, CA 95482</td>
+        <td>39.0493340, -123.1727500</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>New Clairvaux Vineyards</td>
+        <td>26240 7th St</td>
+        <td>Vina, CA 96092</td>
+        <td>39.9321710, -122.0581190</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Newsome-Harlow Wines</td>
+        <td>403 Main Street</td>
+        <td>Murphys, CA 95247</td>
+        <td>38.1374103, -120.4639585</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Newton Vineyard</td>
+        <td>2555 Madrona Ave</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4957102, -122.4814916</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Nickel &amp; Nickel</td>
+        <td>8164 St. Helena Highway</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4428884, -122.4057187</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Nottingham Cellars</td>
+        <td>2245 S. Vasco Rd., Unit C</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6764000, -121.7193616</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Oak Farm Vineyards</td>
+        <td>23627 N DeVries Rd</td>
+        <td>Lodi, CA 95242</td>
+        <td>38.2009133, -121.3542945</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Oak Mountain Winery</td>
+        <td>36522 Via Verde</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5187996, -117.0226493</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Oakville Ranch</td>
+        <td>7781 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4580870, -122.3501150</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Occasio Winery</td>
+        <td>2245 B South Vasco Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6764000, -121.7193616</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Far North California</td>
+        <td>Far North California</td>
+        <td>Odyssey Winery &amp; Vineyards</td>
+        <td>6237 Cohasset Rd.</td>
+        <td>Chico, CA 95973</td>
+        <td>39.8386070, -121.8401310</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Omega Road Winery</td>
+        <td>2127 South Vasco Road Suite C</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6772849, -121.7197686</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Opus One</td>
+        <td>7900 St. Helena Hwy</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4414090, -122.3995606</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Oso Libre Winery</td>
+        <td>7383 Vineyard Drive</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5964300, -120.8312081</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Outpost Estate Wines</td>
+        <td>2075 Summit Lake Dr.</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5966240, -122.4631100</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Pacheco Ranch Winery</td>
+        <td>235 Alameda Del Prado Road</td>
+        <td>Novato, CA 94949</td>
+        <td>38.0546021, -122.5317150</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Pacific Star Winery</td>
+        <td>33000 North Highway 1</td>
+        <td>Fort Bragg, CA 95437</td>
+        <td>39.5919947, -123.7836765</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Page Mill Winery</td>
+        <td>1960 S. Livermore Ave.</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6687802, -121.7471961</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Palumbo Family Vineyards &amp; Winery</td>
+        <td>40150 Barksdale Circle</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5418150, -117.0347450</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Paradigm Winery</td>
+        <td>1277 Dwyer Road</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4207556, -122.3939404</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Paraduxx</td>
+        <td>7257 Silverado Trail</td>
+        <td>Yountville, CA 94558</td>
+        <td>38.4367484, -122.3517108</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Passalacqua Winery </td>
+        <td>3805 Lambert Bridge Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6537292, -122.9256733</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Patz &amp; Hall </td>
+        <td>21200 8th St E</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2640921, -122.4367709</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Paul Hobbs Winery </td>
+        <td>3355 Gravenstein Hwy North</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4401726, -122.8581171</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Peachy Canyon Winery</td>
+        <td>1480 N. Bethel Road</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5798440, -120.7188961</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Pear Valley</td>
+        <td>4900 Union Rd.</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6365110, -120.6080959</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Pedrizzetti Winery (Morgan Hill Cellars)</td>
+        <td>1645 San Pedro Ave</td>
+        <td>Morgan Hill, CA 95037</td>
+        <td>37.1318470, -121.6210010</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Pedroncelli Winery </td>
+        <td>1220 Canyon Road</td>
+        <td>Geyserville , CA 95441</td>
+        <td>38.7123485, -122.9339378</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Pellet Estate</td>
+        <td>1241 Adams Street</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5046464, -122.4706844</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Peltier Winery &amp; Vineyards</td>
+        <td>22150 N. Kennefick Rd.</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1871850, -121.2414950</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Penman Springs Vineyard</td>
+        <td>1985 Penman Springs Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6269094, -120.6151297</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>People?s Wine Revolution</td>
+        <td>1311 Pine St</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5767387, -122.5779474</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Pessagno Winery</td>
+        <td>1645 River Road</td>
+        <td>Salinas, CA 93908</td>
+        <td>36.4805040, -121.4846320</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Peterson Winery </td>
+        <td>4791 Dry Creek Rd</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6732395, -122.9338227</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Petroni Vineyards </td>
+        <td>990 Cavedale Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.3422900, -122.4772530</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Phantom Rivers Wine</td>
+        <td>211 E. Branch Street</td>
+        <td>Arroyo Grande, CA 93420</td>
+        <td>35.1242641, -120.5775386</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Philip Togni Vineyard</td>
+        <td>3780 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5216960, -122.5361870</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Mendocino County</td>
+        <td>Philo Ridge Vineyards</td>
+        <td>14125 Highway 128</td>
+        <td>Boonville, CA 95415</td>
+        <td>39.0087602, -123.3668626</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Pi?a Cellars</td>
+        <td>8060 Silverado Trail</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4668931, -122.3768770</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Pipestone Vineyards</td>
+        <td>2040 Niderer Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5866346, -120.7682415</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Pisoni Vineyards </td>
+        <td>607 Martin Ave Ste 111</td>
+        <td>Rohnert Park, CA 94928</td>
+        <td>38.3548211, -122.7259732</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Plateau Vineyards</td>
+        <td>20170 Sierra Soto</td>
+        <td>Murrietta, CA 92562</td>
+        <td>33.5338530, -117.3077690</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Lake County</td>
+        <td>Ployez Winery</td>
+        <td>11171 Highway 29</td>
+        <td>Lower Lake, CA 95457</td>
+        <td>38.8926464, -122.6114628</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Point Reyes Vineyards</td>
+        <td>12700 Highway 1</td>
+        <td>Point Reyes, CA 94956</td>
+        <td>39.3213689, -123.8016750</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Pomar Junction Vineyard &amp; Winery</td>
+        <td>5036 South El Pomar</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5499309, -120.6117993</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Ponte Family Estate Winery</td>
+        <td>35053 Rancho California Road</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5383542, -117.0479751</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Porter Creek Vineyards </td>
+        <td>8735 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5235440, -122.8876330</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Porter Family Vineyards</td>
+        <td>1189 Green Valley Road</td>
+        <td>Napa, CA 94559</td>
+        <td>38.2835662, -122.2218685</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Prager Winery &amp; Port Works</td>
+        <td>1281 Lewelling Lane</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4911548, -122.4542874</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Pride Mountain Vineyards</td>
+        <td>4026 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5257279, -122.5627714</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>Quady Winery</td>
+        <td>13181 Road 24</td>
+        <td>Madera, CA 93639</td>
+        <td>36.9399545, -120.1070045</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Quivira Vineyards &amp; Winery </td>
+        <td>4900 West Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6562250, -122.9380420</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast </td>
+        <td>San Francisco Bay</td>
+        <td>R&amp;B Cellars</td>
+        <td>1835 San Jose Ave.</td>
+        <td>Alameda, CA 94501</td>
+        <td>37.7656989, -122.2560169</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ram?s Gate Winery </td>
+        <td>28700 Arnold Dr.</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.1737910, -122.4516096</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Ramona Ranch Winery</td>
+        <td>23578 Highway 78</td>
+        <td>Ramona, CA 92065</td>
+        <td>33.0576190, -116.8186810</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Ramspur Winery</td>
+        <td>3100 Old Sonoma Rd</td>
+        <td>Napa, CA 94558</td>
+        <td>38.2906940, -122.3167300</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Ranchita Canyon Vineyard</td>
+        <td>3439 Ranchita Canyon Road</td>
+        <td>San Miguel, CA 93451</td>
+        <td>35.7562170, -120.6158240</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Rancho Sisquoc Winery</td>
+        <td>6600 Foxen Canyon Road</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8478444, -120.2410639</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Rapazzini Winery</td>
+        <td>4350 Monterey Road</td>
+        <td>Gilroy, CA 95020</td>
+        <td>36.9644909, -121.5511385</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ravenswood Winery </td>
+        <td>18701 Gehricke Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.3008959, -122.4415797</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Raymond Vineyard &amp; Cellar</td>
+        <td>849 Zinfandel Lane</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4855190, -122.4376200</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Regale Winery &amp; Vineyards</td>
+        <td>24040 Summit Road</td>
+        <td>Los Gatos, CA 95033</td>
+        <td>37.1223069, -121.9330450</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Yuba County</td>
+        <td>Renaissance Winery</td>
+        <td>12585 Rices Crossing Road</td>
+        <td>Oregon House, CA 95962</td>
+        <td>39.3294181, -121.2542977</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Renwood Winery</td>
+        <td>12225 Steiner Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5417521, -120.7950854</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Retzlaff Vineyards</td>
+        <td>1356 So. Livermore Ave</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6736283, -121.7504947</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ridge Vineyards ? Lytton Springs Tasting Room </td>
+        <td>650 Lytton Springs Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6591190, -122.8857330</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Ridge Vineyards ? Monte Bello Tasting Room</td>
+        <td>17100 Montebello Road</td>
+        <td>Cupertino, CA 95014</td>
+        <td>37.3070465, -122.1286121</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Ripken Vineyards &amp; Winery</td>
+        <td>14300 North DeVries Road</td>
+        <td>Lodi, CA 95242</td>
+        <td>38.1093600, -121.3455930</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast </td>
+        <td>Mendocino County</td>
+        <td>Rivino Winery </td>
+        <td>14125 Highway 128</td>
+        <td>Ukiah, CA 95482</td>
+        <td>39.0087602, -123.3668626</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Riverbench Vineyard &amp; Winery</td>
+        <td>6020 Foxen Canyon Road</td>
+        <td>Santa Maria, CA 93454</td>
+        <td>34.8537377, -120.2493856</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>River Run Vintners</td>
+        <td>65 Rogge Lane</td>
+        <td>Watsonville, CA 95076</td>
+        <td>36.8990785, -121.6409884</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Robert Hall Winery</td>
+        <td>3443 Mill Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6438969, -120.6334389</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Robert Keenan Winery</td>
+        <td>3660 Spring Mountain Rd</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5228180, -122.5335490</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Robert Mondavi Winery</td>
+        <td>7801 St. Helena Hwy 29</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4369158, -122.4032333</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Robert Renzoni Vineyards</td>
+        <td>37350 De Portola Rd.</td>
+        <td>Temecula, CA 92592</td>
+        <td>33.5117581, -117.0193376</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Robert Talbott Vineyards</td>
+        <td>53 West Carmel Valley Road</td>
+        <td>Carmel Valley, CA 93924</td>
+        <td>36.4803899, -121.7345741</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Robert Young Winery </td>
+        <td>4960 Red Winery Road</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6925059, -122.8263062</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Rocca Family Vineyards</td>
+        <td>1130 Main Street</td>
+        <td>Napa, CA 94559</td>
+        <td>38.3003657, -122.2861516</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Rodney Strong Vineyards </td>
+        <td>11455 Old Redwood Highway</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5734461, -122.8439531</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Rodrigue Molyneaux Winery</td>
+        <td>3053 Marina Avenue</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6544685, -121.7573462</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast </td>
+        <td>Mendocino County</td>
+        <td>Roederer Estate</td>
+        <td>4501 Highway 128</td>
+        <td>Philo, CA 95466</td>
+        <td>39.1087707, -123.5019738</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Ron Rubin Winery </td>
+        <td>5220 Ross Rd</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4575180, -122.8822720</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Lake County</td>
+        <td>Rosa d?Oro Vineyards</td>
+        <td>3915 Main Street</td>
+        <td>Kelseyville, CA 95451</td>
+        <td>38.9777661, -122.8387047</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Rosenthal ? The Malibu Estate</td>
+        <td>18741 Pacific Coast Highway</td>
+        <td>Malibu, CA 90265</td>
+        <td>34.0392958, -118.5833316</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Roudon-Smith Winery</td>
+        <td>18 Hanger Way Suite C</td>
+        <td>Watsonville, CA 95076</td>
+        <td>36.9293489, -121.7915374</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Round Pond Estate</td>
+        <td>850 Rutherford Road</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4720740, -122.4071960</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Rued Winery </td>
+        <td>3850 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6573700, -122.9263610</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Rusack Vineyards</td>
+        <td>1819 Ballard Canyon Rd</td>
+        <td>Solvang, CA 93463</td>
+        <td>34.6376436, -120.1418336</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Russian Hill Estate Winery </td>
+        <td>4525 Slusser Road</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.4973564, -122.8300146</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Rustridge Vineyard and Winery</td>
+        <td>2910 Lower Chiles Valley Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5266825, -122.3181667</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Rutherford Hill Winery</td>
+        <td>200 Rutherford Hill Road</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4935317, -122.4036319</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Rutherford Wine Company</td>
+        <td>1680 Silverado Trail</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4886045, -122.4071719</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Salvestrin Winery</td>
+        <td>397 Main Street</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4963647, -122.4613992</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>San Agustin Vineyards</td>
+        <td>37078 Highway 79</td>
+        <td>Warner Springs, CA 92086</td>
+        <td>33.3802427, -116.7876045</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>San Joaquin Wine Company</td>
+        <td>21821 Ave. 16</td>
+        <td>Madera, CA 93637</td>
+        <td>36.9826905, -120.1515329</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>San Marcos Creek</td>
+        <td>7750 North Highway 101</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.7139711, -120.6959470</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>San Pasqual Winery</td>
+        <td>5151 Santa Fe Street</td>
+        <td>San Diego , CA 92109</td>
+        <td>32.8201940, -117.2260436</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Sanford Winery</td>
+        <td>5010 Santa Rosa Road</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6088108, -120.3289581</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Sans Liege Wines</td>
+        <td>870 Price St.</td>
+        <td>Pismo Beach, CA 93449</td>
+        <td>35.1427884, -120.6408758</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Santa Barbara Winery</td>
+        <td>202 Anacapa Street</td>
+        <td>Santa Barbara, CA 93103</td>
+        <td>34.4154082, -119.6905539</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Santa Cruz Mountain Vineyard</td>
+        <td>334 A Ingalls St</td>
+        <td>Santa Cruz, CA 95060</td>
+        <td>36.9590333, -122.0478487</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Satori Cellars</td>
+        <td>2100 Buena Vista Avenue</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0510210, -121.5496530</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Saucelito Canyon Vineyard &amp; Winery</td>
+        <td>3180 Biddle Ranch Rd</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2204323, -120.6011432</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast </td>
+        <td>Mendocino County</td>
+        <td>Scharffenberger Cellars</td>
+        <td>8501 Highway 128</td>
+        <td>Philo, CA 94566</td>
+        <td>39.0669903, -123.4414763</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Scheid Vineyards</td>
+        <td>1972 Hobson Avenue</td>
+        <td>Greenfield, CA 93927</td>
+        <td>36.2755232, -121.1867555</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Scherrer Winery </td>
+        <td>4940 Ross Rd.</td>
+        <td>Sebastopol, CA 95472</td>
+        <td>38.4538104, -122.8802243</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Schramsberg Vineyards</td>
+        <td>1400 Schramsberg Road</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5505189, -122.5380696</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Schug Carneros Estate </td>
+        <td>602 Bonneau Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2307051, -122.4767768</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Schweiger Vineyards</td>
+        <td>4015 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5261292, -122.5471086</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Scribe Winery </td>
+        <td>2300 Napa Road</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2800730, -122.4127537</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Seavey Vineyard</td>
+        <td>1310 Conn Valley Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5061579, -122.3992574</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Placer County</td>
+        <td>Secret Ravine Vineyards</td>
+        <td>4390 Gold Trail Way</td>
+        <td>Loomis, CA 95650</td>
+        <td>38.8036099, -121.1898457</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Seghesio Family Vineyards </td>
+        <td>700 Grove Street</td>
+        <td>Healsburg, CA 95448</td>
+        <td>38.6179675, -122.8749840</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Sequoia Grove Vineyards</td>
+        <td>8338 St. Helena Highway</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4492830, -122.4122701</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Sera Fina Cellars</td>
+        <td>17000 Latrobe Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.4558324, -120.9157786</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Shadow Mountain Vineyards &amp; Winery</td>
+        <td>34690 Highway 79</td>
+        <td>Warner Springs, CA 92086</td>
+        <td>33.3423578, -116.7371392</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Shadow Ranch</td>
+        <td>7050 Fairplay Rd</td>
+        <td>Somerset, CA 95684</td>
+        <td>38.5976670, -120.6935420</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Sherwin Family Vineyards</td>
+        <td>4060 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5297030, -122.5580150</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Siduri Wines </td>
+        <td>981 Airway Ct., Suite E</td>
+        <td>Santa Rosa, CA</td>
+        <td>38.4751349, -122.7355900</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Silver Fox Vineyards</td>
+        <td>4683 Morningstar Lane</td>
+        <td>Mariposa, CA 95338</td>
+        <td>37.4964350, -119.9144940</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Silver Mountain Vineyards</td>
+        <td>269 Silver Mountain Drive</td>
+        <td>Los Gatos, CA 95033</td>
+        <td>37.1091825, -121.9338336</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Silver Oak Cellars</td>
+        <td>915 Oakville Cross Road</td>
+        <td>Oakville, CA 94562</td>
+        <td>38.4443097, -122.3862132</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Silver Oak Cellars Alexander Valley </td>
+        <td>24625 Chianti Rd</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.7418240, -122.9560980</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Silver Wines</td>
+        <td>724 Reddick Street</td>
+        <td>Santa Barbara, CA 93103</td>
+        <td>34.4242131, -119.6860277</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Simi Winery </td>
+        <td>16275 Healdsburg Avenue</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6405095, -122.8736523</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Sine Qua Non</td>
+        <td>PO BOX 1048</td>
+        <td>Oakview, CA 93022</td>
+        <td>34.3999960, -119.3001134</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Lake County</td>
+        <td>Six Sigma Winery</td>
+        <td>13372 Spruce Grove Road</td>
+        <td>Lower Lake, CA 95457</td>
+        <td>38.8541250, -122.5326510</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Smith-Madrone</td>
+        <td>4022 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5243063, -122.5498768</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Sobon Estate</td>
+        <td>14430 Shenandoah Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5325417, -120.7553983</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Sojourn Cellars </td>
+        <td>141 East Napa St.</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2914731, -122.4557249</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast </td>
+        <td>San Francisco Bay</td>
+        <td>Sol Rouge Winery and Tasting Room</td>
+        <td>29 Avenue G, Treasure Island</td>
+        <td>San Francisco, CA 94130</td>
+        <td>37.8183644, -122.3669173</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Clara Valley</td>
+        <td>Solis Winery</td>
+        <td>3920 Hecker Pass Hwy</td>
+        <td>Gilroy, CA 95020</td>
+        <td>37.0126350, -121.6420493</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Somerston Wine Company</td>
+        <td>3450 Sage Canyon Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5062006, -122.2772711</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Sonoma Valley Portworks </td>
+        <td>613 2nd Street</td>
+        <td>Petaluma, CA 94952</td>
+        <td>38.2311000, -122.6308160</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Sonoma-Cutrer Vineyards </td>
+        <td>4401 Slusser Road</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.4991305, -122.8321047</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>South Coast Winery Resort &amp; Spa</td>
+        <td>34843 Rancho California Road, Suite C,</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5335566, -117.0537373</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Spelletich Cellars</td>
+        <td>2545 Napa Valley Corporate Dr.</td>
+        <td>Napa, CA 94558</td>
+        <td>38.2539682, -122.2761996</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Spenker Winery</td>
+        <td>17303 N Devries Rd</td>
+        <td>Lodi, CA 95242</td>
+        <td>38.1387220, -121.3577970</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>St. Amant Winery</td>
+        <td>1 Winemaster Way</td>
+        <td>Lodi, CA 95240</td>
+        <td>38.1456214, -121.2460662</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Stag?s Leap Wine Cellars</td>
+        <td>5766 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3983978, -122.3243927</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Staglin Family Vineyard</td>
+        <td>1570 Bella Oaks Lane</td>
+        <td>Rutherford, CA 94573</td>
+        <td>38.4408600, -122.4264409</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Steltzner Vineyards</td>
+        <td>5998 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4055630, -122.3277340</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Steven Kent Winery</td>
+        <td>5443 Tesla Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6642890, -121.7280860</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Still Waters Vineyards</td>
+        <td>2750 Old Grove Lane</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5750529, -120.5854340</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Stolpman Vineyards</td>
+        <td>1659 Copenhagen Drive</td>
+        <td>Solvang, CA 93464</td>
+        <td>34.5951943, -120.1399398</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Stone Edge Winery </td>
+        <td>Post Office Box 487</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2898202, -122.4587853</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Stony Hill Vineyard</td>
+        <td>3331 St. Helena Hwy</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5355227, -122.5292079</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Storrs Winery</td>
+        <td>303 Potrero Street, no. 35</td>
+        <td>Santa Cruz, CA 95060</td>
+        <td>36.9815220, -122.0304180</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Story Winery</td>
+        <td>10525 Bell Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5481663, -120.8280171</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Summerland Winery</td>
+        <td>2330 Lillie Avenue</td>
+        <td>Summerland, CA 93067</td>
+        <td>34.4216683, -119.5993125</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Summerwood Winery and Inn</td>
+        <td>2175 Arbor Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5841335, -120.7152809</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Summit Lake Vineyards &amp; Winery</td>
+        <td>2000 Summit Lake Dr</td>
+        <td>Angwin, CA 94508</td>
+        <td>38.5993050, -122.4608300</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>San Joaquin Valley</td>
+        <td>Sumner Peck Ranch</td>
+        <td>14439 N. Friant Rd.</td>
+        <td>Friant, CA 93626</td>
+        <td>36.9442114, -119.7325789</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Solano County</td>
+        <td>Sunset Cellars</td>
+        <td>4495 Suisun Valley Rd</td>
+        <td>Suisun Valley, CA 94534</td>
+        <td>38.2637992, -122.1140546</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Sutter Home Winery</td>
+        <td>277 St. Helena Hwy South</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4905799, -122.4545970</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Tablas Creek Vineyard</td>
+        <td>9339 Adelaida Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6365638, -120.8596739</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Talley Vineyards</td>
+        <td>3031 Lopez Drive</td>
+        <td>Arroyo Grande, CA 93420</td>
+        <td>35.1774916, -120.5234440</td>
+        <td>www.sumnerpeckranch.com </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Tara Bella Winery </td>
+        <td>3701 Viking Road</td>
+        <td>Santa Rosa, CA 95401</td>
+        <td>38.4825453, -122.8135254</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Tedeschi Family Winery</td>
+        <td>2779 Grant Street</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5903512, -122.5940491</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Tenuta Vineyards</td>
+        <td>633 Kalthoff Common</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6294910, -121.7907780</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Terra d?Oro Winery</td>
+        <td>20680 Shenandoah School Rd</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5095010, -120.8015950</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Thacher Winery</td>
+        <td>8355 Vineyard Dr.</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6131742, -120.8445024</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>The Accidental Winery</td>
+        <td>2555 E Olympic Blvd.</td>
+        <td>Los Angeles, CA 90023</td>
+        <td>34.0269023, -118.2239712</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>The Fableist Wine Co.</td>
+        <td>3005-A Limestone Way</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.5768402, -120.6909540</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>The Lucas Winery</td>
+        <td>18196 North Davis Road</td>
+        <td>Lodi, CA 95242</td>
+        <td>38.1478501, -121.3339212</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>The Ojai Vineyards</td>
+        <td>109 S Montgomery St</td>
+        <td>Ojai, CA 93023</td>
+        <td>34.4473083, -119.2436740</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>The Old Creek Ranch Winery</td>
+        <td>10024 Old Creek Road</td>
+        <td>Ventura, CA 93001</td>
+        <td>34.3898734, -119.2940016</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Thomas Fogarty Winery</td>
+        <td>19501 Skyline Blvd.</td>
+        <td>Woodside, CA 94062</td>
+        <td>37.3428387, -122.2197848</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Thornton Winery</td>
+        <td>32575 Rancho California Road</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5193241, -117.0891437</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Sacramento Valley</td>
+        <td>Three Sticks Wines </td>
+        <td>143 W Spain Street</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2937884, -122.4597055</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Three Wine Company</td>
+        <td>35265 Willow Avenue</td>
+        <td>Clarksburg, CA 95612</td>
+        <td>38.4233152, -121.5330473</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Tobin James Cellars</td>
+        <td>8950 Union Rd.</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6546150, -120.5345070</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Tolosa Winery</td>
+        <td>4910 Edna Road</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2312358, -120.6241244</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Transcend Wines</td>
+        <td>313 N. F. Street</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6425452, -120.4554614</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Trefethen Family Vineyards</td>
+        <td>1160 Oak Knoll Avenue</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3559736, -122.3231504</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Trentadue Winery </td>
+        <td>19170 Geyserville Ave</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6800566, -122.8719086</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Trinchero Napa Valley</td>
+        <td>3070 N. St. Helena Hwy</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5283957, -122.4977783</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Trione Vineyards &amp; Winery </td>
+        <td>19550 Geyserville Avenue</td>
+        <td>Geyserville, CA 95441</td>
+        <td>38.6880390, -122.8804475</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Triple B Ranches</td>
+        <td>15030 Vesper Road</td>
+        <td>Valley Center, CA 92082</td>
+        <td>33.2364240, -117.0046670</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Los Carneros</td>
+        <td>Truchard Vineyards</td>
+        <td>3234 Old Sonoma Rd</td>
+        <td>Napa, CA 94559</td>
+        <td>38.2856840, -122.3231610</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Truett Hurst Winery </td>
+        <td>5610 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6802490, -122.9419067</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Tulocay Winery</td>
+        <td>1426 Coombsville Road</td>
+        <td>Napa, CA 94558</td>
+        <td>38.2979950, -122.2586970</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Turiya Wines</td>
+        <td>321 North D Street</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6429134, -120.4533754</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Turley Wine Cellars ? Amador</td>
+        <td>10851 Shenandoah Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5175996, -120.8231091</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Turley Wine Cellars ? Paso Robles</td>
+        <td>2900 Vineyard Drive</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5536288, -120.7514285</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Twomey Cellars </td>
+        <td>3000 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5775198, -122.8766191</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Unti Vineyards </td>
+        <td>4202 Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6642561, -122.9314820</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>El Dorado County</td>
+        <td>Ursa Vineyards</td>
+        <td>3500 Carson Road</td>
+        <td>Camino, CA 95709</td>
+        <td>38.7394228, -120.7002551</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>V. Sattui Winery</td>
+        <td>1111 White Lane</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4889820, -122.4481340</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Venge Vineyards</td>
+        <td>4708 Silverado Trail</td>
+        <td>Calistoga, CA 94515</td>
+        <td>38.5795740, -122.5534340</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Viader Vineyards and Winery</td>
+        <td>1120 Deer Park Road</td>
+        <td>Deer Park, CA 94576</td>
+        <td>38.5599141, -122.4744928</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Victor Hugo Vineyards &amp; Winery</td>
+        <td>2850 El Pomar Dr.</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5632535, -120.6488076</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Villicana Winery</td>
+        <td>2725 Adelaida Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6509034, -120.7413262</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Vina Robles</td>
+        <td>3700 Mill Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.6462671, -120.6305511</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Vineyard 29</td>
+        <td>2929 St. Helena Hwy. N.</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5213317, -122.4937408</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Vineyard 7 &amp; 8</td>
+        <td>4028 Spring Mountain Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5260948, -122.5524806</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Vineyard of Pasterick </td>
+        <td>3491 West Dry Creek Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6435899, -122.9175906</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Amador County</td>
+        <td>Vino Noceto</td>
+        <td>11011 Shenandoah Road</td>
+        <td>Plymouth, CA 95669</td>
+        <td>38.5215808, -120.8205484</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Los Angeles Area</td>
+        <td>Vino V Wines</td>
+        <td>Post Office Box 1302 </td>
+        <td>Ventura, CA, 93002</td>
+        <td>34.3926571, -119.3008456</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Vista Del Rey Vineyards</td>
+        <td>7340 Drake Road</td>
+        <td>Paso Robles, CA 93446</td>
+        <td>35.7088190, -120.7376750</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>Volker Eisele Family Estate</td>
+        <td>3080 Lower Chiles Valley Road</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.5325872, -122.3261414</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Livermore Valley</td>
+        <td>Wente Vineyards Estate Winery &amp; Tasting Room</td>
+        <td>5565 Tesla Road</td>
+        <td>Livermore, CA 94550</td>
+        <td>37.6642501, -121.7253465</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>West Wines </td>
+        <td>1000 Dry Creek Rd</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6303488, -122.8911567</td>
+        <td>http://www.vinovwines.com/</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Madera County</td>
+        <td>Westbrook Wine Farm</td>
+        <td>49610 House Ranch Road</td>
+        <td>O&#39;Neals, CA 93645</td>
+        <td>37.1644080, -119.6480280</td>
+        <td>https://quadywinery.com/</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>White Rock Vineyards</td>
+        <td>1115 Loma Vista Drive</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3775369, -122.2865760</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Wild Horse Winery &amp; Vineyards</td>
+        <td>1437 Wild Horse Winery Court</td>
+        <td>Templeton, CA 93465</td>
+        <td>35.5325680, -120.6705460</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>William Harrison Vineyards &amp; Winery</td>
+        <td>1443 Silverado Trail</td>
+        <td>St. Helena, CA 94574</td>
+        <td>38.4946470, -122.4225640</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>William Hill Estate Winery</td>
+        <td>1761 Atlas Peak Road</td>
+        <td>Napa, CA 94558</td>
+        <td>38.3555165, -122.2700462</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>William Knuttel Winery </td>
+        <td>21684 Eighth Street East</td>
+        <td>Sonoma, CA 95476</td>
+        <td>38.2598449, -122.4367049</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Williams Selyem Winery </td>
+        <td>6575 Westside Road</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.5296180, -122.8702580</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>Temecula Valley</td>
+        <td>Wilson Creek Winery</td>
+        <td>35960 Rancho California Road</td>
+        <td>Temecula, CA 92591</td>
+        <td>33.5471800, -117.0447560</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Windsor Oaks Vineyards &amp; Winery </td>
+        <td>10810 Hillview Rd.</td>
+        <td>Windsor, CA 95492</td>
+        <td>38.5798345, -122.8162337</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Windy Oaks Estate Vineyards &amp; Winery</td>
+        <td>550 Hazel Dell Rd</td>
+        <td>Corralitos, CA 95076</td>
+        <td>37.0194716, -121.7595445</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>San Luis Obispo County</td>
+        <td>Wolff Vineyards</td>
+        <td>6238 Orcutt Road</td>
+        <td>San Luis Obispo, CA 93401</td>
+        <td>35.2195039, -120.5923963</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Inland Valleys</td>
+        <td>Lodi and the Delta</td>
+        <td>Woodbridge Winery</td>
+        <td>5950 East Woodbridge Road</td>
+        <td>Acampo, CA 95220</td>
+        <td>38.1597626, -121.2447472</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Cruz Mountains</td>
+        <td>Woodside Vineyards</td>
+        <td>340 Kings Mountain Road</td>
+        <td>Woodside, CA 94062</td>
+        <td>37.4309075, -122.2731426</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Southern California</td>
+        <td>San Diego County</td>
+        <td>Woof?n Rose Winery</td>
+        <td>17073 Garjan Ln.</td>
+        <td>Ramona, CA 92065</td>
+        <td>33.0211779, -116.9378904</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Monterey County</td>
+        <td>Wrath Wines</td>
+        <td>35801 Foothill Road</td>
+        <td>Soledad, CA 93960</td>
+        <td>36.4091494, -121.3853156</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Zaca Mesa Winery &amp; Vineyards</td>
+        <td>6905 Foxen Canyon Road</td>
+        <td>Los Olivos, CA 93441</td>
+        <td>34.7720598, -120.1332689</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Napa Valley</td>
+        <td>ZD Wines</td>
+        <td>8383 Silverado Trail</td>
+        <td>Napa, CA 94558</td>
+        <td>38.4766245, -122.3896475</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Paso Robles</td>
+        <td>Zenaida Cellars</td>
+        <td>1550 Highway 46 West</td>
+        <td>Paso Robles, CA 93466</td>
+        <td>35.5822257, -120.7199331</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>North Coast</td>
+        <td>Sonoma County</td>
+        <td>Zichichi Family Vineyard &amp; Winery </td>
+        <td>8626 W. Dry Creek Rd.</td>
+        <td>Healdsburg, CA 95448</td>
+        <td>38.6952797, -122.9645019</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Sierra Foothills</td>
+        <td>Calaveras County</td>
+        <td>Zucca Mountain Vineyards</td>
+        <td>7830 Airola Rd</td>
+        <td>Vallecito, CA 95251</td>
+        <td>38.0469971, -120.4696524</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        <tr>
+        <td>Central Coast</td>
+        <td>Santa Barbara County</td>
+        <td>Zotovich Vineyards and Winery</td>
+        <td>300 N 12th St</td>
+        <td>Lompoc, CA 93436</td>
+        <td>34.6430651, -120.4352372</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        </tr>
+        </tbody>
+      </table>
+
+
+
+     
+   
+
+  
+</div>
+
+</body>
+</html>

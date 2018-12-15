@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Winers Project Analysis</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style>
+
+  img 
+  {
+    width: 100%;
+    height: auto;
+  }
+
+</style>
+</head>
+
+
+<body>
+<div class="container">
+
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark col-md-12 row">
+
+                <!-- Navbar Brand -->
+                <a class="navbar-brand" href="landing_page.html">Wine Analysis</a>
+
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="data/convertcsv.htm">Data</a>
+                  </li>
+
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Comparisons
+                      </a>
+
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="wine/Compare/index.html">California White Wine</a>
+                        <a class="dropdown-item" href="wine/Comparison_2.html">California Sparkling Wine</a>
+                        <a class="dropdown-item" href="wine/Comparison-3.html">California Red Wine</a>
+                      </div>
+
+                    </li>
+
+    
+
+                  <!-- Dropdown -->
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Visualizations
+                    </a>
+
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="templates/index_mfm.html">Muriel</a>
+                      <a class="dropdown-item" href="templates/index_ll.html">Lei Lei</a>
+                      <a class="dropdown-item" href="templates/index_mcm.html">Marcus</a>
+                      <a class="dropdown-item" href="templates/index_jk.html">Jasmine</a>
+                      <a class="dropdown-item" href="templates/wine-directory.html">Patricia</a>
+
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+</nav>
+
+<div class = "row">
+  <div class = "col-md-8">
+    <br>
+    <img src="images/napa_54_990x660.jpg" alt="wines" width="746" height="563">
+
+  </div>
+  <div class = "col-md-4">
+
+      <br>
+
+      <p>Our effort today is to provide the students and faculty of the UCSD Extension Data Sciences 
+         and Visualization program an opportunity to view our visualizations on machine learning (ML) 
+         and to display various tools and web resources we have learned in this program.</p> 
+      <br>
+      <p>  All source data and visualizations are provided for reference.</p>
+
+      </p>
+
+     
+
+     
+    
+
+    <script type="text/javascript">
+
+
+
+        var slideimages = new Array() // create new array to preload images
+
+        slideimages[0] = new Image() // create new instance of image object
+
+        slideimages[0].src = "images/WineSpilling.jpg" // set image src property to image path, preloading image in the process
+
+        slideimages[1] = new Image()
+
+        slideimages[1].src = "images/hill.jpg"
+
+        slideimages[2] = new Image()
+
+        slideimages[2].src = "images/wine-tasting.jpg"
+
+        slideimages[3] = new Image()
+
+        slideimages[3].src = "images/winegrapes2.jpg"
+
+        slideimages[4] = new Image()
+
+        slideimages[4].src = "images/ballons-0.jpg"
+
+        slideimages[5] = new Image()
+
+        slideimages[5].src = "images/cheese1.png"
+
+        slideimages[6] = new Image()
+
+        slideimages[6].src = "images/buena-vista-winery-1.jpg"
+
+        slideimages[7] = new Image()
+
+        slideimages[7].src = "images/wine-country-32-500w.gif"
+
+        slideimages[8] = new Image()
+
+        slideimages[8].src = "images/cheese-3.jpg"
+
+        slideimages[9] = new Image()
+
+        slideimages[9].src = "images/cityhall-sonoma-california-small-town-wine-lovers.jpg"
+
+        slideimages[10] = new Image()
+
+        slideimages[10].src = "images/WineRoad_Vineyard_sunset_800x482.jpg"
+
+        slideimages[11] = new Image()
+
+        slideimages[11].src = "images/grapes-and-wine2.jpg"
+
+        slideimages[12] = new Image()
+
+        slideimages[12].src = "images/SonomaCounty2560.jpg"
+
+        slideimages[13] = new Image()
+
+        slideimages[13].src = "images/wine-cheese-04.wdp.jxr"
+
+        slideimages[14] = new Image()
+
+        slideimages[14].src = "images/red-and-white.jpg"
+
+        slideimages[15] = new Image()
+
+        slideimages[15].src = "images/cheese-wine0.jpg"
+
+        slideimages[16] = new Image()
+
+        slideimages[16].src = "images/cheese-3.jpg"
+
+        slideimages[17] = new Image()
+
+        slideimages[17].src = "images/napa0.jpg"
+
+        slideimages[18] = new Image()
+
+        slideimages[18].src = "images/napa-and-sonoma-wine-.jpg"
+
+        slideimages[19] = new Image()
+
+        slideimages[19].src = "images/red-wine-13.jpg"
+
+        slideimages[20] = new Image()
+
+        slideimages[20].src = "images/Schug-Carneros-Estate-Winery.jpg"
+
+        slideimages[21] = new Image()
+
+        slideimages[21].src = "images/red-wine-15.jpg"
+
+        slideimages[22] = new Image()
+
+        slideimages[22].src = "images/signs-10.jpg"
+
+        slideimages[23] = new Image()
+
+        slideimages[23].src = "images/wine-cheese-04.wdp.jxr"
+
+        slideimages[24] = new Image()
+
+        slideimages[24].src = "images/Wine-Wallpaper.jpg"
+
+        slideimages[25] = new Image()
+
+        slideimages[25].src = "images/cheese-wine0.jpg"
+
+        slideimages[26] = new Image()
+
+        slideimages[26].src = "images/baletto.jpg"
+
+        slideimages[27] = new Image()
+
+        slideimages[27].src = "images/ClassicWineRoads_SilveradoTrail_JamesDaisa_1280x642_downsized.jpg"
+
+        slideimages[28] = new Image()
+
+        slideimages[28].src = "images/cityhall-sonoma-california-small-town-wine-lovers.jpg"
+
+        slideimages[29] = new Image()
+
+        slideimages[29].src = "images/holiday.jpg"
+
+        slideimages[30] = new Image()
+
+        slideimages[30].src = "images/grapes-and-wine2.jpg"
+
+        slideimages[31] = new Image()
+
+        slideimages[31].src = "images/napa-1.jpg"
+
+        slideimages[32] = new Image()
+
+        slideimages[32].src = "images/valley.jpg"
+
+        slideimages[33] = new Image()
+
+        slideimages[33].src = "images/sonoma-county-vineyards.jpg"
+
+        slideimages[34] = new Image()
+
+        slideimages[34].src = "images/luxury-travel-napa-valley-poetry-inn-review.jpg"
+
+        slideimages[35] = new Image()
+
+        slideimages[35].src = "images/holidaywinepairings.jpg"
+       
+
+      </script>
+
+        
+
+        <body>
+
+        <img src="1_beer/images/2kids.png" id="slide" width="20" height="10" />
+                <script type="text/javascript">
+
+        
+
+        //variable that will increment through the images
+        var step=0
+
+               function slideit(){
+
+         //if browser does not support the image object, exit.
+         if (!document.images)
+          return
+         document.getElementById('slide').src = slideimages[step].src
+
+         if (step<35)
+          step++
+         else
+          step=0
+         //call function "slideit()" every 2. seconds
+         setTimeout("slideit()",2000)
+        }
+        slideit()
+      </script>
+
+  </div> 
+
+  <br>    
+
+  <br> 
+  <div class = "row">
+
+      <div class = "col-md-12">
+          <br>    
+  </div> 
+
+  <div class = "row">
+
+  <div class = "col-md-12">
+    <p>Our analysis was to determine and visualize if we could choose a better wine or similar wine 
+          based on expert and comments from wine enthusists. 
+         
+         We used Python/Pandas with Matplotlib, Tableau, and webscraping. </p> 
+
+    <p>Our objective is to build a series of visualizations to showcase the following: 
+
+      <ul>
+        <li>Machine Learning/NLP for words describing wine</li>
+        <li>Chemistry based prediction (random forest, decision tree)</li>
+        <li>Wine Consumption</li>
+        <li>Mapping of California Wines</li>
+      </ul>
+
+    </p>
+
+        <br>
+
+           
+
+    <p><h3>The California Wine Industry is a large part of the California economy.</h3>
+
+      <ul>
+
+    <p><h4>Statistics</h4></p>  
+        <p>California produces 81% of U.S. wine and is world’s 4th largest producer. 
+
+          Wine production is known to be  attributed to proprietorships, mainly family-owned businesses, many multi-generational. <p>
+
+    <p><h4>Wine Grape Growers</h4></p>
+
+        <p>Winegrapes are grown in 49 of 58 counties.  There are approximately 5,900 winegrape growers and 599,000 acres of winegrapes or   
+            (242,400 hectares) 139 American Viticultural Areas. Vineyards preserve open space and provide scenic beauty.</p>
+
+    <p><h4>Economic Impact</h4></p>
+
+         <p>Many wineries are owned by large conglomerates; however, consumers view the Sonoma and Napa Wine Country as private 
+            wineries each with their own ambiance and niche market.  The wineries in Sonoma and Napa provide a vacation mecca for 
+            and must see destination.</p>
+          <br>
+          <li>$241 Million cases of wine sold in the United States which equates to</li>
+          <li>$35.2 Billion in retail value sold in the United States</li>
+          <li>90% of U.S. Wine Exports are produced in California</li>
+          
+      </ul>
+
+    <br>
+
+  
+
+  </div>      
+
+      
+
+</div>   
+
+
+
+</div>              
+
+
+
+</body>
